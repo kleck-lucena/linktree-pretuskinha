@@ -1,0 +1,167 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+ --bg-color:#f1e739;
+ --text-color-title:black;
+ --text-color-links: #FFFFFF;
+}
+
+body.dark{
+  --bg-color:#060504; 
+  --text-color-title:#f1e739; 
+  --text-color-links:black;
+}
+
+.theme{
+  display: flex;
+  margin-right: 20px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: right;
+}
+
+.checkbox{
+position: absolute;
+opacity:1;
+}
+
+.label{
+  background-color:black;
+  border-radius: 50px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+
+  transform: scale(1.5);
+}
+
+.label .ball{
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  top:2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.fa-moon{
+color: #f1e739;
+/*color: #f39c12;*/
+}
+.fa-sun{
+color: #f1e739;
+
+}
+
+body{
+  background-color:var(--bg-color);
+  font-family: 'Raleway',sans-serif;
+  transition: background 0.2s linear;
+ 
+}
+
+.container{
+  text-align: center;
+  width: 400px;
+  margin:60px auto;
+}
+
+img {
+  width:100%;
+}
+
+.capa {
+  border-radius:50%; 
+  width:150px;
+  height:150px;
+  border: #f6261c solid 6px;
+  padding: 4px;
+}
+
+h1{
+  font-family: 'Anton', sans-serif;
+  font-size: 38px;
+  line-height: 28px;
+  color:var(--text-color-title);
+  margin-top:24px;
+  margin-bottom:20px;
+}
+
+a{
+  text-decoration:none;
+  color:var(--text-color-title);
+  font-size:20px;
+} 
+
+.insta :hover {
+font-weight: bold;
+}
+ul{
+  list-style: none;
+  margin: 42px;
+}
+
+ul li a{
+display: block;
+height: 53px;
+margin-bottom:16px;
+
+font-size:20px;
+line-height:53px;
+
+align-items: center;
+justify-content: center;
+text-align: center;
+
+background:var(--text-color-title);
+color: var(--text-color-links);
+border-radius:6px;
+border: 3px solid var(--text-color-title);
+transition:background 400ms;
+}
+
+ul li a:hover{
+  background-color:transparent;
+  color: var(--text-color-title);
+}
+
+.icone{
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+footer{
+  font-size: 18px;
+  color:#f6261c;
+}
+
+.cacto{
+  position: fixed;
+  border-radius:50%; 
+  width: 75px; 
+  height: 75px;
+  border: #f6261c solid 4px;
+  padding: 4px;
+  right: 20px;
+  bottom: 20px;
+ }
